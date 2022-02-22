@@ -24,7 +24,7 @@ class TikTakToe:
     def main_menu(self) -> None:
         """This function starts/restarts this game."""
         self.reset_gameboard()
-        opt = input("Welcome to Tik Tak Toe!\n'a': Play with AI. 'any other keys': Play with player 2.\n")
+        opt = input("Welcome to Tic Tac Toe!\n'a': Play with AI. 'any other keys': Play with player 2.\n")
         if opt.lower() == "a":
             self.ai = True
         self.game()
