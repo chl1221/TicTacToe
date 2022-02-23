@@ -131,7 +131,6 @@ class TikTakToe:
                 gameboard[row][col] = "x"
                 score = max(self.minimax(turn, gameboard), score)
                 gameboard[row][col] = move
-        #turn -= 1
         return score
 
     def game(self):
@@ -157,5 +156,6 @@ class TikTakToe:
         if again.lower() == 'r':
             self.main_menu()
 
-play = TikTakToe()
-play.main_menu()
+if __name__ == "__main__":
+    play = TikTakToe()
+    play.main_menu()
